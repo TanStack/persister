@@ -11,7 +11,7 @@ title: OptionalKeys
 type OptionalKeys<T, TKey> = Omit<T, TKey> & Partial<Pick<T, TKey>>;
 ```
 
-Defined in: types.ts:12
+Defined in: [types.ts:12](https://github.com/TanStack/persister/blob/main/packages/persister/src/types.ts#L12)
 
 ## Type Parameters
 

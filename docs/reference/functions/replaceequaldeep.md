@@ -11,7 +11,7 @@ title: replaceEqualDeep
 function replaceEqualDeep<T>(a, b): T
 ```
 
-Defined in: compare.ts:6
+Defined in: [compare.ts:6](https://github.com/TanStack/persister/blob/main/packages/persister/src/compare.ts#L6)
 
 This function returns `a` if `b` is deeply equal.
 If not, it will replace any deeply equal children of `b` with those of `a`.

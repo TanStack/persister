@@ -7,32 +7,8 @@ title: "@tanstack/react-persister"
 
 # @tanstack/react-persister
 
-## Classes
-
-- [AsyncPersister](../classes/asyncpersister.md)
-- [Persister](../classes/persister.md)
-- [StoragePersister](../classes/storagepersister.md)
-
-## Interfaces
-
-- [PersistedStorage](../interfaces/persistedstorage.md)
-- [StoragePersisterOptions](../interfaces/storagepersisteroptions.md)
-
-## Type Aliases
-
-- [AnyAsyncFunction](../type-aliases/anyasyncfunction.md)
-- [AnyFunction](../type-aliases/anyfunction.md)
-- [OptionalKeys](../type-aliases/optionalkeys.md)
-- [RequiredKeys](../type-aliases/requiredkeys.md)
-
 ## Functions
 
-- [isFunction](../functions/isfunction.md)
-- [isPlainArray](../functions/isplainarray.md)
-- [isPlainObject](../functions/isplainobject.md)
-- [parseFunctionOrValue](../functions/parsefunctionorvalue.md)
-- [replaceEqualDeep](../functions/replaceequaldeep.md)
-- [shallowEqualObjects](../functions/shallowequalobjects.md)
 - [useLocalStorageState](../functions/uselocalstoragestate.md)
 - [useSessionStorageState](../functions/usesessionstoragestate.md)
 - [useStoragePersister](../functions/usestoragepersister.md)

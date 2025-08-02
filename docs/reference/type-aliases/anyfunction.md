@@ -11,7 +11,7 @@ title: AnyFunction
 type AnyFunction = (...args) => any;
 ```
 
-Defined in: types.ts:5
+Defined in: [types.ts:5](https://github.com/TanStack/persister/blob/main/packages/persister/src/types.ts#L5)
 
 Represents a function that can be called with any arguments and returns any value.
 

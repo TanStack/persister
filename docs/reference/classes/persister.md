@@ -7,7 +7,7 @@ title: Persister
 
 # Class: `abstract` Persister\<TState, TSelected\>
 
-Defined in: persister.ts:27
+Defined in: [persister.ts:27](https://github.com/TanStack/persister/blob/main/packages/persister/src/persister.ts#L27)
 
 Abstract class that defines the contract for a state persister implementation.
 A persister is responsible for loading and saving state to a storage medium.
@@ -53,7 +53,7 @@ class MyPersister extends Persister<MyState> {
 new Persister<TState, TSelected>(key): Persister<TState, TSelected>
 ```
 
-Defined in: persister.ts:31
+Defined in: [persister.ts:31](https://github.com/TanStack/persister/blob/main/packages/persister/src/persister.ts#L31)
 
 #### Parameters
 
@@ -73,7 +73,7 @@ Defined in: persister.ts:31
 abstract clearState: (useDefaultState?) => void;
 ```
 
-Defined in: persister.ts:35
+Defined in: [persister.ts:35](https://github.com/TanStack/persister/blob/main/packages/persister/src/persister.ts#L35)
 
 #### Parameters
 
@@ -93,7 +93,7 @@ Defined in: persister.ts:35
 readonly key: string;
 ```
 
-Defined in: persister.ts:31
+Defined in: [persister.ts:31](https://github.com/TanStack/persister/blob/main/packages/persister/src/persister.ts#L31)
 
 ***
 
@@ -103,7 +103,7 @@ Defined in: persister.ts:31
 abstract loadState: () => undefined | TSelected;
 ```
 
-Defined in: persister.ts:33
+Defined in: [persister.ts:33](https://github.com/TanStack/persister/blob/main/packages/persister/src/persister.ts#L33)
 
 #### Returns
 
@@ -117,7 +117,7 @@ Defined in: persister.ts:33
 abstract saveState: (state) => void;
 ```
 
-Defined in: persister.ts:34
+Defined in: [persister.ts:34](https://github.com/TanStack/persister/blob/main/packages/persister/src/persister.ts#L34)
 
 #### Parameters
 

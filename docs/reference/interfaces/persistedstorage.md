@@ -7,7 +7,7 @@ title: PersistedStorage
 
 # Interface: PersistedStorage\<TState, TSelected\>
 
-Defined in: storage-persister.ts:4
+Defined in: [storage-persister.ts:4](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L4)
 
 ## Type Parameters
 
@@ -23,7 +23,7 @@ Defined in: storage-persister.ts:4
 optional buster: string;
 ```
 
-Defined in: storage-persister.ts:8
+Defined in: [storage-persister.ts:8](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L8)
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: storage-persister.ts:8
 state: undefined | TSelected;
 ```
 
-Defined in: storage-persister.ts:9
+Defined in: [storage-persister.ts:9](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L9)
 
 ***
 
@@ -43,4 +43,4 @@ Defined in: storage-persister.ts:9
 timestamp: number;
 ```
 
-Defined in: storage-persister.ts:10
+Defined in: [storage-persister.ts:10](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L10)

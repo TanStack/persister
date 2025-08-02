@@ -11,7 +11,7 @@ title: RequiredKeys
 type RequiredKeys<T, K> = Required<Pick<T, K>> & Omit<T, K>;
 ```
 
-Defined in: types.ts:15
+Defined in: [types.ts:15](https://github.com/TanStack/persister/blob/main/packages/persister/src/types.ts#L15)
 
 ## Type Parameters
 

@@ -7,7 +7,7 @@ title: AsyncPersister
 
 # Class: `abstract` AsyncPersister\<TState, TSelected\>
 
-Defined in: async-persister.ts:11
+Defined in: [async-persister.ts:11](https://github.com/TanStack/persister/blob/main/packages/persister/src/async-persister.ts#L11)
 
 Abstract class that defines the contract for an asynchronous state persister.
 An async persister is responsible for saving and loading state to a storage medium using asynchronous operations.
@@ -32,7 +32,7 @@ See also: `Persister` for synchronous persister implementations.
 new AsyncPersister<TState, TSelected>(key): AsyncPersister<TState, TSelected>
 ```
 
-Defined in: async-persister.ts:15
+Defined in: [async-persister.ts:15](https://github.com/TanStack/persister/blob/main/packages/persister/src/async-persister.ts#L15)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: async-persister.ts:15
 abstract clearState: (useDefaultState?) => void;
 ```
 
-Defined in: async-persister.ts:19
+Defined in: [async-persister.ts:19](https://github.com/TanStack/persister/blob/main/packages/persister/src/async-persister.ts#L19)
 
 #### Parameters
 
@@ -72,7 +72,7 @@ Defined in: async-persister.ts:19
 readonly key: string;
 ```
 
-Defined in: async-persister.ts:15
+Defined in: [async-persister.ts:15](https://github.com/TanStack/persister/blob/main/packages/persister/src/async-persister.ts#L15)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: async-persister.ts:15
 abstract loadState: () => undefined | TSelected;
 ```
 
-Defined in: async-persister.ts:17
+Defined in: [async-persister.ts:17](https://github.com/TanStack/persister/blob/main/packages/persister/src/async-persister.ts#L17)
 
 #### Returns
 
@@ -96,7 +96,7 @@ Defined in: async-persister.ts:17
 abstract saveState: (state) => void;
 ```
 
-Defined in: async-persister.ts:18
+Defined in: [async-persister.ts:18](https://github.com/TanStack/persister/blob/main/packages/persister/src/async-persister.ts#L18)
 
 #### Parameters
 

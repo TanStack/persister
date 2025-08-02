@@ -7,7 +7,7 @@ title: StoragePersister
 
 # Class: StoragePersister\<TState, TSelected\>
 
-Defined in: storage-persister.ts:143
+Defined in: [storage-persister.ts:143](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L143)
 
 A persister that saves state to browser local/session storage.
 
@@ -58,7 +58,7 @@ const persister = new StoragePersister({
 new StoragePersister<TState, TSelected>(initialOptions): StoragePersister<TState, TSelected>
 ```
 
-Defined in: storage-persister.ts:149
+Defined in: [storage-persister.ts:149](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L149)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: storage-persister.ts:149
 readonly key: string;
 ```
 
-Defined in: persister.ts:31
+Defined in: [persister.ts:31](https://github.com/TanStack/persister/blob/main/packages/persister/src/persister.ts#L31)
 
 #### Inherited from
 
@@ -96,7 +96,7 @@ Defined in: persister.ts:31
 options: StoragePersisterOptions<TState, TSelected> & Required<Pick<Partial<StoragePersisterOptions<any, any>>, "deserializer" | "serializer" | "storage">> & Omit<Partial<StoragePersisterOptions<any, any>>, "deserializer" | "serializer" | "storage">;
 ```
 
-Defined in: storage-persister.ts:147
+Defined in: [storage-persister.ts:147](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L147)
 
 ## Methods
 
@@ -106,7 +106,7 @@ Defined in: storage-persister.ts:147
 clearState(useDefaultState): void
 ```
 
-Defined in: storage-persister.ts:258
+Defined in: [storage-persister.ts:258](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L258)
 
 Clears the state from storage or sets the default state if provided and specified to be used
 
@@ -134,7 +134,7 @@ Persister.clearState
 loadState(): undefined | TSelected
 ```
 
-Defined in: storage-persister.ts:193
+Defined in: [storage-persister.ts:193](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L193)
 
 Loads the state from storage
 
@@ -156,7 +156,7 @@ Persister.loadState
 saveState(state): void
 ```
 
-Defined in: storage-persister.ts:169
+Defined in: [storage-persister.ts:169](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L169)
 
 Saves the state to storage
 
@@ -184,7 +184,7 @@ Persister.saveState
 setOptions(newOptions): void
 ```
 
-Defined in: storage-persister.ts:160
+Defined in: [storage-persister.ts:160](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L160)
 
 Updates the persister options
 
@@ -206,7 +206,7 @@ Updates the persister options
 subscribeToStorage(): void
 ```
 
-Defined in: storage-persister.ts:245
+Defined in: [storage-persister.ts:245](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L245)
 
 #### Returns
 
@@ -220,7 +220,7 @@ Defined in: storage-persister.ts:245
 unsubscribeFromStorage(): void
 ```
 
-Defined in: storage-persister.ts:250
+Defined in: [storage-persister.ts:250](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L250)
 
 #### Returns
 

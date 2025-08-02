@@ -14,7 +14,7 @@ function useSessionStorageState<TValue, TSelected>(
    options?): readonly [TValue | TSelected, Dispatch<SetStateAction<TValue | TSelected>>]
 ```
 
-Defined in: react-persister/src/storage-persister/useStorageState.ts:60
+Defined in: [useStorageState.ts:60](https://github.com/TanStack/persister/blob/main/packages/react-persister/src/storage-persister/useStorageState.ts#L60)
 
 A hook that persists state to sessionStorage and syncs it across tabs
 
@@ -36,7 +36,7 @@ A hook that persists state to sessionStorage and syncs it across tabs
 
 ### options?
 
-`Omit`\<[`StoragePersisterOptions`](../../interfaces/storagepersisteroptions.md)\<`TValue`, `TSelected`\>, `"storage"` \| `"key"`\>
+`Omit`\<`StoragePersisterOptions`\<`TValue`, `TSelected`\>, `"storage"` \| `"key"`\>
 
 ## Returns
 

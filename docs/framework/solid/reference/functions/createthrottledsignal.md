@@ -73,7 +73,7 @@ Available throttler state properties:
 
 ## Returns
 
-\[`Accessor`\<`TValue`\>, `Setter`\<`TValue`\>, [`SolidThrottler`](../../../interfaces/solidthrottler.md)\<`Setter`\<`TValue`\>, `TSelected`\>\]
+\[`Accessor`\<`TValue`\>, `Setter`\<`TValue`\>, [`SolidThrottler`](../../../../interfaces/solidthrottler.md)\<`Setter`\<`TValue`\>, `TSelected`\>\]
 
 ## Example
 

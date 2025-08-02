@@ -11,7 +11,7 @@ title: AnyAsyncFunction
 type AnyAsyncFunction = (...args) => Promise<any>;
 ```
 
-Defined in: types.ts:10
+Defined in: [types.ts:10](https://github.com/TanStack/persister/blob/main/packages/persister/src/types.ts#L10)
 
 Represents an asynchronous function that can be called with any arguments and returns a promise.
 

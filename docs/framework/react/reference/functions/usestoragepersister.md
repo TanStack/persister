@@ -11,7 +11,7 @@ title: useStoragePersister
 function useStoragePersister<TState, TSelected>(options): StoragePersister<TState, TSelected>
 ```
 
-Defined in: react-persister/src/storage-persister/useStoragePersister.ts:5
+Defined in: [useStoragePersister.ts:5](https://github.com/TanStack/persister/blob/main/packages/react-persister/src/storage-persister/useStoragePersister.ts#L5)
 
 ## Type Parameters
 
@@ -23,8 +23,8 @@ Defined in: react-persister/src/storage-persister/useStoragePersister.ts:5
 
 ### options
 
-[`StoragePersisterOptions`](../../interfaces/storagepersisteroptions.md)\<`TState`, `TSelected`\>
+`StoragePersisterOptions`\<`TState`, `TSelected`\>
 
 ## Returns
 
-[`StoragePersister`](../../classes/storagepersister.md)\<`TState`, `TSelected`\>
+`StoragePersister`\<`TState`, `TSelected`\>

@@ -7,7 +7,7 @@ title: StoragePersisterOptions
 
 # Interface: StoragePersisterOptions\<TState, TSelected\>
 
-Defined in: storage-persister.ts:19
+Defined in: [storage-persister.ts:19](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L19)
 
 Configuration options for creating a browser-based state persister.
 
@@ -28,7 +28,7 @@ sessionStorage (cleared when browser tab/window closes) to store serialized stat
 optional buster: string;
 ```
 
-Defined in: storage-persister.ts:27
+Defined in: [storage-persister.ts:27](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L27)
 
 A version string used to invalidate cached state. When changed, any existing
 stored state will be considered invalid and cleared.
@@ -41,7 +41,7 @@ stored state will be considered invalid and cleared.
 optional defaultState: TState;
 ```
 
-Defined in: storage-persister.ts:31
+Defined in: [storage-persister.ts:31](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L31)
 
 The default state to use if no state is found in storage.
 
@@ -53,7 +53,7 @@ The default state to use if no state is found in storage.
 optional deserializer: (state) => PersistedStorage<TSelected>;
 ```
 
-Defined in: storage-persister.ts:38
+Defined in: [storage-persister.ts:38](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L38)
 
 Optional function to customize how state is deserialized after loading from storage.
 By default, JSON.parse is used.
@@ -78,7 +78,7 @@ Optionally, consider using SuperJSON for better deserialization of complex objec
 key: string;
 ```
 
-Defined in: storage-persister.ts:42
+Defined in: [storage-persister.ts:42](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L42)
 
 Unique identifier used as the storage key for persisting state.
 
@@ -90,7 +90,7 @@ Unique identifier used as the storage key for persisting state.
 optional maxAge: number;
 ```
 
-Defined in: storage-persister.ts:47
+Defined in: [storage-persister.ts:47](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L47)
 
 Maximum age in milliseconds before stored state is considered expired.
 When exceeded, the state will be cleared and treated as if it doesn't exist.
@@ -103,7 +103,7 @@ When exceeded, the state will be cleared and treated as if it doesn't exist.
 optional onLoadState: (state, storagePersister) => void;
 ```
 
-Defined in: storage-persister.ts:51
+Defined in: [storage-persister.ts:51](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L51)
 
 Optional callback that runs after state is successfully loaded.
 
@@ -129,7 +129,7 @@ Optional callback that runs after state is successfully loaded.
 optional onLoadStateError: (error, storagePersister) => void;
 ```
 
-Defined in: storage-persister.ts:58
+Defined in: [storage-persister.ts:58](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L58)
 
 Optional callback that runs after state is unable to be loaded.
 
@@ -155,7 +155,7 @@ Optional callback that runs after state is unable to be loaded.
 optional onSaveState: (state, storagePersister) => void;
 ```
 
-Defined in: storage-persister.ts:65
+Defined in: [storage-persister.ts:65](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L65)
 
 Optional callback that runs after state is successfully saved.
 
@@ -181,7 +181,7 @@ Optional callback that runs after state is successfully saved.
 optional onSaveStateError: (error, storagePersister) => void;
 ```
 
-Defined in: storage-persister.ts:73
+Defined in: [storage-persister.ts:73](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L73)
 
 Optional callback that runs after state is unable to be saved.
 For example, if the storage is full (localStorage >= 5MB)
@@ -208,7 +208,7 @@ For example, if the storage is full (localStorage >= 5MB)
 optional select: (state) => TSelected;
 ```
 
-Defined in: storage-persister.ts:91
+Defined in: [storage-persister.ts:91](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L91)
 
 Optional function to filter which parts of the state are persisted and loaded.
 When provided, only the filtered state will be saved to storage and returned when loading.
@@ -234,7 +234,7 @@ Note: Don't use this to replace the serialization. Use the `serializer` option i
 optional serializer: (state) => string;
 ```
 
-Defined in: storage-persister.ts:83
+Defined in: [storage-persister.ts:83](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L83)
 
 Optional function to customize how state is serialized before saving to storage.
 By default, JSON.stringify is used.
@@ -259,7 +259,7 @@ Optionally, consider using SuperJSON for better serialization of complex objects
 optional storage: null | Storage;
 ```
 
-Defined in: storage-persister.ts:98
+Defined in: [storage-persister.ts:98](https://github.com/TanStack/persister/blob/main/packages/persister/src/storage-persister.ts#L98)
 
 The browser storage implementation to use for persisting state.
 Typically window.localStorage or window.sessionStorage.
