@@ -131,4 +131,4 @@ const { pendingItems, activeItems } = asyncQueuer.state();
 
 ## Returns
 
-[`SolidAsyncQueuer`](../../../../../interfaces/solidasyncqueuer.md)\<`TValue`, `TSelected`\>
+[`SolidAsyncQueuer`](../../../../../../interfaces/solidasyncqueuer.md)\<`TValue`, `TSelected`\>
