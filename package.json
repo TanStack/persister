@@ -1,0 +1,83 @@
+{
+  "name": "root",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanstack/persister.git"
+  },
+  "packageManager": "pnpm@10.2.1",
+  "type": "module",
+  "scripts": {
+    "build": "nx affected --targets=build --exclude=examples/** && size-limit",
+    "build:all": "nx run-many --targets=build --exclude=examples/** && size-limit",
+    "build:core": "nx run-many --targets=build --projects=packages/persister,packages/persister && size-limit",
+    "changeset": "changeset",
+    "changeset:publish": "changeset publish",
+    "changeset:version": "changeset version && pnpm install --no-frozen-lockfile && pnpm prettier:write",
+    "clean": "find . -name 'dist' -type d -prune -exec rm -rf {} +",
+    "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf {} +",
+    "dev": "pnpm run watch",
+    "docs:generate": "node scripts/generateDocs.js",
+    "format": "pnpm run prettier:write",
+    "lint:fix": "nx affected --target=lint:fix --exclude=examples/**",
+    "lint:fix:all": "pnpm run format && nx run-many --targets=lint --fix",
+    "preinstall": "node -e \"if(process.env.CI == 'true') {console.log('Skipping preinstall...'); process.exit(1)}\" || npx -y only-allow pnpm",
+    "prettier": "prettier --ignore-unknown '**/*'",
+    "prettier:write": "pnpm run prettier --write",
+    "size": "size-limit",
+    "test": "pnpm run test:ci",
+    "test:build": "nx affected --target=test:build --exclude=examples/**",
+    "test:ci": "nx run-many --targets=test:format,test:eslint,test:sherif,test:knip,test:lib,test:types,test:build,test:verify-links",
+    "test:eslint": "nx affected --target=test:eslint --exclude=examples/**",
+    "test:format": "pnpm run prettier --check",
+    "test:knip": "knip",
+    "test:lib": "nx affected --targets=test:lib --exclude=examples/**",
+    "test:lib:dev": "pnpm test:lib && nx watch --all -- pnpm test:lib",
+    "test:pr": "nx affected --targets=test:format,test:eslint,test:sherif,test:knip,test:lib,test:types,test:build,build",
+    "test:sherif": "sherif",
+    "test:types": "nx affected --targets=test:types --exclude=examples/**",
+    "test:verify-links": "node scripts/verify-links.ts",
+    "watch": "pnpm run build:all && nx watch --all -- pnpm run build:all"
+  },
+  "nx": {
+    "includedScripts": [
+      "test:knip",
+      "test:sherif"
+    ]
+  },
+  "size-limit": [
+    {
+      "path": "packages/persister/dist/esm/index.js",
+      "limit": "8 KB"
+    }
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.29.5",
+    "@faker-js/faker": "^9.9.0",
+    "@size-limit/preset-small-lib": "^11.2.0",
+    "@svitejs/changesets-changelog-github-compact": "^1.2.0",
+    "@tanstack/config": "0.20.0",
+    "@testing-library/jest-dom": "^6.6.4",
+    "@types/node": "^24.1.0",
+    "eslint": "^9.32.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "fast-glob": "^3.3.3",
+    "jsdom": "^26.1.0",
+    "knip": "^5.62.0",
+    "markdown-link-extractor": "^4.0.2",
+    "nx": "^21.3.10",
+    "premove": "^4.0.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-svelte": "^3.4.0",
+    "publint": "^0.3.12",
+    "sherif": "^1.6.1",
+    "size-limit": "^11.2.0",
+    "typescript": "5.9.2",
+    "vite": "^7.0.6",
+    "vitest": "^3.2.4"
+  },
+  "overrides": {
+    "@tanstack/persister": "workspace:*",
+    "@tanstack/react-persister": "workspace:*"
+  }
+}
