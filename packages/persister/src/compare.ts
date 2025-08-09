@@ -62,8 +62,7 @@ export function shallowEqualObjects<T extends Record<string, any>>(
 
   return true
 }
-
-export function isPlainArray<T>(value: unknown): value is Array<T> {
+export function isPlainArray(value: unknown): value is Array<any> {
   return Array.isArray(value) && value.length === Object.keys(value).length
 }
 
