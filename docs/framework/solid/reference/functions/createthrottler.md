@@ -69,7 +69,7 @@ Available state properties:
 
 ## Returns
 
-[`SolidThrottler`](../../../../../../../../interfaces/solidthrottler.md)\<`TFn`, `TSelected`\>
+[`SolidThrottler`](../../../../../../../../../interfaces/solidthrottler.md)\<`TFn`, `TSelected`\>
 
 ## Example
 

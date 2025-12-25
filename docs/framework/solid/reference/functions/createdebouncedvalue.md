@@ -72,7 +72,7 @@ Available debouncer state properties:
 
 ## Returns
 
-\[`Accessor`\<`TValue`\>, [`SolidDebouncer`](../../../../../../../../interfaces/soliddebouncer.md)\<`Setter`\<`TValue`\>, `TSelected`\>\]
+\[`Accessor`\<`TValue`\>, [`SolidDebouncer`](../../../../../../../../../interfaces/soliddebouncer.md)\<`Setter`\<`TValue`\>, `TSelected`\>\]
 
 ## Example
 

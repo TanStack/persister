@@ -115,4 +115,4 @@ const { items, isRunning } = queue.state();
 
 ## Returns
 
-[`SolidQueuer`](../../../../../../../../interfaces/solidqueuer.md)\<`TValue`, `TSelected`\>
+[`SolidQueuer`](../../../../../../../../../interfaces/solidqueuer.md)\<`TValue`, `TSelected`\>
