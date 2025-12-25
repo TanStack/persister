@@ -114,4 +114,4 @@ const { items, isRunning } = batcher.state();
 
 ## Returns
 
-[`SolidBatcher`](../../../../../../interfaces/solidbatcher.md)\<`TValue`, `TSelected`\>
+[`SolidBatcher`](../../../../../../../interfaces/solidbatcher.md)\<`TValue`, `TSelected`\>

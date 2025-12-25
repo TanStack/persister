@@ -76,7 +76,7 @@ Available state properties:
 
 ## Returns
 
-[`SolidRateLimiter`](../../../../../../interfaces/solidratelimiter.md)\<`TFn`, `TSelected`\>
+[`SolidRateLimiter`](../../../../../../../interfaces/solidratelimiter.md)\<`TFn`, `TSelected`\>
 
 ## Example
 
